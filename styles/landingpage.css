@@ -23,13 +23,3 @@ h3 {
     font-size: 18px /* x.xrem  (rem is a unit of measure) */;
     color: rgb(0, 0, 0); /* #xxxxxx */;
 }
-
-footer {
-    font-size: smaller; /* smaller */;
-}
-
-ul {
-    /* text-align: center; */
-    margin: 0 auto;
-    max-width: 300px;
-}
