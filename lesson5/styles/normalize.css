@@ -1,0 +1,55 @@
+*{
+    color: #000
+}
+html { 
+    
+    margin: 10px;  
+    background-color: #fff;
+	text-align: center;
+} 
+
+header {
+    margin: 10px 0px 10px 0px;
+    background-color:  rgb(94, 122, 100);
+	
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+h1 {
+    padding: 10px 0px 0px 0px;
+    font-size: 24px; 
+    color: #000; 
+    font-family: Georgia;
+}
+
+h2 {
+    padding: -20px 0px 0px 0px;
+    font-size: 14px; 
+    color: #000000; 
+}
+h3 {
+    font-size: 18px;
+    color: rgb(0, 0, 0) ;
+}
+body { 
+    font-size: 16px; 
+    line-height: 20px;
+    font-family: 'Georgia';
+    color: #000;
+    background-color:#fffff;
+ 
+}
+.motto {
+    color: darkolivegreen
+}
+div {
+    color: #000
+}
+ul {
+    color: forestgreen 
+}
