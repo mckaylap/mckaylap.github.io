@@ -10,7 +10,7 @@ html {
 
 header {
     margin: 10px 0px 10px 0px;
-    background-color:  rgb(94, 122, 100);
+    background-color:  rgba(51, 184, 80, 0.829);
 	
 }
 
@@ -52,4 +52,12 @@ div {
 }
 ul {
     color: forestgreen 
+}
+main {
+    text-align: left;
+    font-size: 16px; 
+    line-height: 20px;
+    font-family: 'Georgia';
+    color: #000;
+
 }
