@@ -59,5 +59,9 @@ main {
     line-height: 20px;
     font-family: 'Georgia';
     color: #000;
-
+}
+map {
+    border: darkolivegreen;
+    border: 5px;
+    
 }
