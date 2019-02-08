@@ -53,6 +53,11 @@ div {
 ul {
     color: forestgreen 
 }
+
+li {
+    color: #000
+}
+
 main {
     text-align: left;
     font-size: 16px; 
