@@ -71,7 +71,14 @@ map {
     
 }
 
-p{
+article {
     color: #000;
-    max-width: 70%;
+    max-width: 75%;
+    text-align: left;
+    align-content: center;
+}
+
+img {
+    align-content: center;
+    align-items: center;
 }
