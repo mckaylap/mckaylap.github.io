@@ -5,7 +5,7 @@ html {
     
     margin: 10px;  
     background-color: #fff;
-	text-align: center;
+	text-align: left;
 } 
 
 header {
@@ -16,7 +16,7 @@ header {
 
 header img, .headings {
 	display: inline-block;
-	vertical-align: middle;
+	align-self: left;
 	margin: 10px;
 }
 
@@ -59,9 +59,7 @@ main {
 }
 
 main img {
-    align-content: center;
-}
-
+    display: inline-block;
 }
 
 body { 
@@ -91,8 +89,4 @@ article {
     max-width: 90%;
     text-align: left;
     align-content: center;
-}
-
-img {
-    align-self: center; 
 }
