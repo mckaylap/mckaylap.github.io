@@ -70,3 +70,8 @@ map {
     border: 5px;
     
 }
+
+p{
+    color: #000;
+    max-width: 70%;
+}
