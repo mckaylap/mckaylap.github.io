@@ -12,11 +12,10 @@ html {
 
 header {
     margin: 0px 0px 0px 0px;
+    width:90%;
     text-align: right;
-    color:#000 ;
-    display: inline-block;
+    color:rgb(53, 206, 22);
     background-image: url("../images/snowtrees.jpg");
-	
 }
 
 .logo img{
