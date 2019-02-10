@@ -14,8 +14,7 @@ header {
     margin: 0px 0px 0px 0px;
     text-align: center;
     display: inline-block;
-    background-color:  rgba(7, 226, 55, 0.829);
-	
+    background-image: url("../images/snowtrees.jpg");	
 }
 
 header img, .headings {
