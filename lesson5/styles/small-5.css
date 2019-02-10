@@ -1,3 +1,5 @@
+@media only screen and (max-width: 600px) {
+
 *{
     color: #000
 }
@@ -9,45 +11,71 @@ html {
 } 
 
 header {
-    margin: 10px 0px 10px 0px;
-    background-color:  rgba(51, 184, 80, 0.829);
+    margin: 0px 0px 0px 0px;
+    text-align: right;
+    display: inline-block;
+    background-color:  rgba(7, 226, 55, 0.829);
 	
 }
 
 header img, .headings {
-	display: inline-block;
-	align-self: left;
-	margin: 10px;
+    display: flex;
+	margin: 10px, 10px, 10px, 10px;
 }
 
+.logo img{
+    float: left;
+    margin-left: 10px 10px 10px 30px;
+    width: 30%;
+
+    }
+
 h1 {
-    padding: 10px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
     font-size: 24px; 
     color: #000; 
     font-family: Georgia;
 }
 
 h2 {
-    padding: -20px 0px 0px 0px;
+    margin: 10px;
     font-size: 14px; 
     color: #000000; 
 }
 h3 {
-    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    font-size: 10px;
     color: rgb(0, 0, 0) ;
 }
 
 nav {
-    color: #000;
+    align-self: auto;
 }
 
 ul {
-    color: forestgreen; 
-}
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    background-color: #f1f1f1;
+  }
 
-li {
+
+  
+  li a {
+    display: block;
     color: #000;
-}
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(12, 206, 77);
+  }
+
+  li.active {
+      background-color: rgb(0, 63, 21);
+  }
 
 main {
     text-align: left;
@@ -89,4 +117,6 @@ article {
     max-width: 90%;
     text-align: left;
     align-content: center;
+}
+
 }

@@ -1,55 +1,125 @@
-*{
-    color: #000
-}
-html { 
+@media only screen and (min-width: 600px) {
+
+    *{
+        color: #000
+    }
+    html { 
+        
+        margin: 10px;  
+        background-color: #fff;
+        text-align: left;
+    } 
     
-    margin: 10px;  
-    background-color: #fff;
-	text-align: center;
-} 
-
-header {
-    margin: 10px 0px 10px 0px;
-    background-color:  rgb(94, 122, 100);
-	
-}
-
-header img, .headings {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 10px;
-}
-
-h1 {
-    padding: 10px 0px 0px 0px;
-    font-size: 24px; 
-    color: #000; 
-    font-family: Georgia;
-}
-
-h2 {
-    padding: -20px 0px 0px 0px;
-    font-size: 14px; 
-    color: #000000; 
-}
-h3 {
-    font-size: 18px;
-    color: rgb(0, 0, 0) ;
-}
-body { 
-    font-size: 16px; 
-    line-height: 20px;
-    font-family: 'Georgia';
-    color: #000;
-    background-color:#fffff;
- 
-}
-.motto {
-    color: darkolivegreen
-}
-div {
-    color: #000
-}
-ul {
-    color: forestgreen 
-}
+    header {
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+        display: inline-block;
+        background-color:  rgba(7, 226, 55, 0.829);
+        
+    }
+    
+    header img, .headings {
+        display: flex;
+        margin: 10px, 10px, 10px, 10px;
+    }
+    
+    .logo img{
+        float: left;
+        margin-left: 10px 10px 10px 30px;
+        width: 30%;
+    
+        }
+    
+    h1 {
+        padding: 10px 10px 10px 10px;
+        font-size: 24px; 
+        color: #000; 
+        font-family: Georgia;
+    }
+    
+    h2 {
+        margin: 10px;
+        font-size: 14px; 
+        color: #000000; 
+    }
+    h3 {
+        padding: 10px 10px 10px 10px;
+        font-size: 10px;
+        color: rgb(0, 0, 0) ;
+    }
+    
+    nav {
+        align-self: auto;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(0, 105, 23);
+      }
+    
+    li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 10px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: rgb(12, 206, 77);
+      }
+    
+      li.active {
+          background-color: rgb(0, 63, 21);
+      }
+    
+    main {
+        text-align: left;
+        font-size: 16px; 
+        line-height: 20px;
+        font-family: 'Georgia';
+        color: #000;
+        max-width: 90%;
+    }
+    
+    main img {
+        display: inline-block;
+    }
+    
+    body { 
+        font-size: 16px; 
+        line-height: 20px;
+        font-family: 'Georgia';
+        color: #000;
+        background-color:#ffffff;
+     
+    }
+    .motto {
+        color: darkolivegreen
+    }
+    
+    div {
+        color: #000
+    }
+    
+    map {
+        border: darkolivegreen;
+        border: 5px;
+        
+    }
+    
+    article {
+        color: #000;
+        max-width: 90%;
+        text-align: left;
+        align-content: center;
+    }
+    
+    }
