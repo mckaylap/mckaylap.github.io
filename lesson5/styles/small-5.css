@@ -13,6 +13,7 @@ html {
 header {
     margin: 0px 0px 0px 0px;
     text-align: right;
+    color:#000 ;
     display: inline-block;
     background-image: url("../images/snowtrees.jpg");
 	
