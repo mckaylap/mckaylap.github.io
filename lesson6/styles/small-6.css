@@ -33,19 +33,19 @@ header img, .headings {
 h1 {
     padding: 10px 10px 10px 10px;
     font-size: 24px; 
-    color: #000; 
+    color: rgb(19, 153, 7); 
     font-family: Georgia;
 }
 
 h2 {
     margin: 10px;
     font-size: 14px; 
-    color: #000000; 
+    color: rgb(19, 153, 7); 
 }
 h3 {
     padding: 10px 10px 10px 10px;
     font-size: 10px;
-    color: rgb(0, 0, 0) ;
+    color: rgb(19, 153, 7) ;
 }
 
 nav {
