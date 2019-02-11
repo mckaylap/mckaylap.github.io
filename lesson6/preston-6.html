@@ -6,17 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SE Idaho Weather | Preston</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" media="screen and (min-width: 600px)" href="styles/large-5.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/small-5.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="styles/large-6.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/small-6.css">
 </head>
 <body>
     <header>
-    <div class="logo">
-        <img src="images/umbrella.jpg.jpg" alt="SE Idaho Weather Logo" width="25%">
-    </div>
-        <h1>South East Idaho Weather</h1>
-        <h2>Weather is us!</h2>
-        <h3>Hike, bike and climb to new heights!</h3>
+        <h1>Southeast Idaho Weather</h1>
+        <h2>A Current Weather Forecast</h2>
+        <h3>Hike, bike, and climb to new heights!</h3>
     </header>
         <nav>
             <ul>
@@ -32,7 +29,7 @@
     <main>
     Current weather: 10 &deg;
     <br>
-    <img src="images/prestonlandscape.jpg.jpg" alt="Preston in Snow" width="70%">
+    <img src="images/prestonlandscape.jpg" alt="Preston in Snow" width="70%">
     <br>
     The Weather in Idaho is very cold during this time of year. But the winter landscapes are beautiful.
     </main>
@@ -58,7 +55,8 @@
         <map>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24109.61531267432!2d-111.90443368129097!3d42.09988214341442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e1!3m2!1sen!2sus!4v1549480033087" width="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
         </map>
-        <p>&copy; 2019 | SE ID Weather | McKayla Plummer</p>
+        <p>&copy; <span id="copy-right-year"></span> | SE ID Weather | McKayla Plummer</p>
     </footer>
+    <script src="scripts/currentdate.js"></script>
 </body>
 </html>

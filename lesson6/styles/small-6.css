@@ -1,10 +1,9 @@
 @media only screen and (max-width: 600px) {
 
 *{
-    color: #000
+    color: #000000
 }
 html { 
-    
     margin: 10px;  
     background-color: #fff;
 	text-align: left;
@@ -14,13 +13,8 @@ header {
     margin: 0px 0px 0px 0px;
     text-align: right;
     display: inline-block;
-    background-color:  rgba(7, 226, 55, 0.829);
+    background-image: url("images/snowtrees.jpg");
 	
-}
-
-header img, .headings {
-    display: flex;
-	margin: 10px, 10px, 10px, 10px;
 }
 
 .logo img{
@@ -31,7 +25,7 @@ header img, .headings {
     }
 
 h1 {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 0px 10px 0px;
     font-size: 24px; 
     color: rgb(19, 153, 7); 
     font-family: Georgia;

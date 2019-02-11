@@ -4,8 +4,7 @@
     color: #000
 }
 html { 
-    
-    margin: 10px;  
+    margin: 0px;  
     background-color: #fff;
 	text-align: left;
 } 
@@ -13,39 +12,32 @@ html {
 header {
     margin: 0px 0px 0px 0px;
     text-align: center;
-    display: inline-block;
-    background-color:  rgba(7, 226, 55, 0.829);
-	
+    width: 100%;
+    background-image: url("../images/snowtrees.jpg"); 
+    background-position: inherit;
+    
+
 }
-
-header img, .headings {
-    display: flex;
-	margin: 10px, 10px, 10px, 10px;
-}
-
-.logo img{
-    float: left;
-    margin-left: 10px 10px 10px 30px;
-    width: 15%;
-
-    }
 
 h1 {
-    padding: 10px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
+    letter-spacing: inherit;
+    line-height: 50px; 
     font-size: 48px; 
-    color: rgb(19, 153, 7); 
+    color: darkolivegreen; 
     font-family: Georgia;
 }
 
 h2 {
     margin: 10px;
     font-size: 38px; 
-    color: rgb(19, 153, 7); 
+    color: darkolivegreen; 
 }
+
 h3 {
     padding: 10px 10px 10px 10px;
     font-size: 24px;
-    color: rgb(19, 153, 7) ;
+    color:  darkolivegreen;
 }
 
 nav {
