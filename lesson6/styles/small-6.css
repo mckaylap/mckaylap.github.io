@@ -10,10 +10,11 @@ html {
 header {
     margin: 0px 0px 0px 0px;
     text-align: center;
+    align-items: center;
     /* display: inline-block; */
     background-image: url("../images/pinecones_600.jpg");
     min-height: 400px;
-    width: 95%
+    max-width: 600px;
 }
 
 h1 {
@@ -46,18 +47,18 @@ ul {
     background-color:  rgb(0, 105, 23);
   }
   
-  li a {
+li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
   }
   
-  li a:hover {
+li a:hover {
     background-color: rgb(12, 206, 77);
   }
 
-  li.active {
+li.active {
       background-color: rgb(0, 63, 21);
   }
 
@@ -103,13 +104,15 @@ article {
     align-content: center;
 }
 
-
 @media only screen and (max-width: 600px) {
     #fivedayforecast {
         display: none;
     }
     nav ul.hide {
         display: none;
+    }
+    nav ul.open {
+        display: block;
     }
 
 }
