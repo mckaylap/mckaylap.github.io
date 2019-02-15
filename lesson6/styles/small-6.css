@@ -13,7 +13,7 @@ header {
     margin: 0px 0px 0px 0px;
     text-align: right;
     display: inline-block;
-    background-image: url("images/snowtrees.jpg");
+    background-image: url("images/pinecones.jpg");
 	
 }
 
@@ -111,6 +111,10 @@ article {
     max-width: 90%;
     text-align: left;
     align-content: center;
+}
+
+nav ul.hide {
+    display: none;
 }
 
 }

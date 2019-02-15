@@ -13,10 +13,8 @@ header {
     margin: 0px 0px 0px 0px;
     text-align: center;
     width: 100%;
-    background-image: url("../images/snowtrees.jpg"); 
-    background-position: inherit;
-    
-
+    height: 20%;
+    background-image: url("../images/pinecones.jpg"); 
 }
 
 h1 {
@@ -112,6 +110,8 @@ article {
     max-width: 90%;
     text-align: left;
     align-content: center;
+    
 }
+
 
 }
