@@ -13,8 +13,7 @@ header {
     margin: 0px 0px 0px 0px;
     text-align: right;
     display: inline-block;
-    background-image: url("images/pinecones.jpg");
-	
+    background-image: url("../images/pinecones.jpg");
 }
 
 .logo img{

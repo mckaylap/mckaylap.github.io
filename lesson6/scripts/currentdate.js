@@ -34,7 +34,7 @@ month[9] = "October";
 month[10] = "November";
 month[11] = "December";
 
-var monthName= month.getMonth();
+var monthName= month[today.getMonth];
 
 //day of month
 
@@ -50,8 +50,8 @@ var fullDate=
 weekday + ", " +
 today.getDate()+ " "+
 monthName + ", " +
-fullYear
+fullYear;
 
-document.getElementById('currentyear').innerhtml= "date.fullDate()";
+document.getElementById('currentyear').innerHTML= return fullDate;
 
 
