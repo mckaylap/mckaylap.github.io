@@ -1,0 +1,72 @@
+@media only screen and (min-width: 600px) {
+
+  header {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    align-items: center;
+    background-image: url("../images/pinecones_widescreen.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 600px;
+    min-width: 100%;  
+    background-color: darkolivegreen;
+}
+
+h1 {
+    padding: 0px 0px 0px 0px;
+    letter-spacing: inherit;
+    line-height: 50px; 
+    font-size: 48px; 
+    color: darkolivegreen; 
+    font-family: Georgia;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 38px; 
+    color: darkolivegreen; 
+}
+
+h3 {
+    padding: 10px;
+    font-size: 24px;
+    color:  darkolivegreen;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    /* overflow: hidden; */
+    background-color: rgb(67, 85, 37);
+    width: 70%;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+    
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+#fivedayforecast {
+    display: block;
+}
+
+button#hamburgericon {
+  display: none;
+}
+
+nav {
+ background-color: darkolivegreen; 
+}
+
+}
