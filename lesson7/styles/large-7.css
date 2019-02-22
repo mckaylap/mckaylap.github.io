@@ -1,15 +1,16 @@
 @media only screen and (min-width: 600px) {
 
   header {
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     text-align: center;
     align-items: center;
     background-image: url("../images/pinecones_widescreen.jpg");
-    background-position: center;
+    background-position-x: center;
     background-repeat: no-repeat;
+    background-position-y: inherit;
     max-height: 600px;
     min-width: 100%;  
-    background-color: darkolivegreen;
+    background-color: #ffffff;
 }
 
 h1 {
