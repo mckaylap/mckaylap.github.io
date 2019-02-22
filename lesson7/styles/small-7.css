@@ -7,7 +7,7 @@ html {
 	text-align: left;
 } 
 
-header {
+#mainheader {
     margin: 0px 0px 0px 0px;
     text-align: center;
     align-items: center;
@@ -116,6 +116,14 @@ article {
     background-color: rgba(0,0,0,0)
 
 }
+#galleryheader {
+    margin: 0px;
+    text-align: center;
+    background-color: darkolivegreen;
+    min-height: 200px;
+    max-width: 100%;
+    align-items: center;
+}
 
 @media only screen and (max-width: 600px) {
     #fivedayforecast {
@@ -127,7 +135,7 @@ article {
     nav ul.open {
         display: block;
     }
-    header {
+    #mainheader {
         margin: 0px;
         text-align: center;
         background-image: url("../images/pinecones_600.jpg");
