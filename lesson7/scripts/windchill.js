@@ -1,4 +1,4 @@
-var temp =50;
+var temp = 15;
 var windSpeed = 10;
 
 var windChill = 35.74 + 0.6215 * 
