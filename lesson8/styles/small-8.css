@@ -1,0 +1,150 @@
+*{
+    color: #000000
+}
+html { 
+    margin: 10px;  
+    background-color: #fff;
+	text-align: left;
+} 
+
+#mainheader {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    align-items: center;
+    /* display: inline-block; */
+    background-image: url("../images/pinecones_600.jpg");
+    min-height: 400px;
+    max-width: 600px;
+}
+
+h1 {
+    padding: 10px 0px 10px 0px;
+    font-size: 24px; 
+    color: rgb(19, 153, 7); 
+    font-family: Georgia;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 14px; 
+    color: rgb(19, 153, 7); 
+}
+h3 {
+    padding: 10px 10px 10px 10px;
+    font-size: 10px;
+    color: rgb(19, 153, 7) ;
+}
+
+nav {
+    align-self: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    background-color:  rgb(0, 105, 23);
+  }
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: rgb(12, 206, 77);
+  }
+
+li.active {
+      background-color: rgb(0, 63, 21);
+  }
+
+main {
+    text-align: left;
+    font-size: 20px; 
+    line-height: 20px;
+    font-family: 'Georgia';
+    color: #000;
+    max-width: 90%;
+}
+
+main img {
+    display: inline-block;
+}
+
+body { 
+    font-size: 16px; 
+    line-height: 20px;
+    font-family: 'Georgia';
+    color: #000;
+    background-color:#ffffff;
+ 
+}
+.motto {
+    color: darkolivegreen
+}
+
+div {
+    color: #000
+}
+
+map {
+    border: darkolivegreen;
+    border: 5px;
+    
+}
+
+article {
+    color: #000;
+    max-width: 90%;
+    text-align: left;
+    align-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid div {
+    border: 1px solid rgb(0,0,0);
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0)
+
+}
+#galleryheader {
+    margin: 0px;
+    text-align: center;
+    background-color: darkolivegreen;
+    min-height: 200px;
+    max-width: 100%;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #fivedayforecast {
+        display: none;
+    }
+    nav ul.hide {
+        display: none;
+    }
+    nav ul.open {
+        display: block;
+    }
+    #mainheader {
+        margin: 0px;
+        text-align: center;
+        background-image: url("../images/pinecones_600.jpg");
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        min-height: 200px;
+        max-width: 600px;
+        align-items: center;
+    }
+
+}
