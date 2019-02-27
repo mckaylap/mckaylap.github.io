@@ -1,0 +1,33 @@
+table, tr, td, th, tbody, tfoot {
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: #e7ffed;
+  } 
+
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+table {
+    box-shadow: 5px;
+}
+
+thead>tr>td {
+    background-color: #7fb9c2;
+}
+
+tfoot>tr>td {
+    background-color: #7fb9c2;
+}
+
+tbody>tr>th {
+    background-color: #628ca6;
+}
+
+#met {
+    background-color: #628ca6;
+}
+
