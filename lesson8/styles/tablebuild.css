@@ -1,5 +1,5 @@
 table, tr, td, th, tbody, tfoot {
-    border: 1px solid black;
+    border: .1px solid black;
     text-align: center;
 }
 
@@ -12,7 +12,7 @@ tr:nth-child(even) {
 }
 
 table {
-    box-shadow: 5px;
+    box-shadow: gray;
 }
 
 thead>tr>td {

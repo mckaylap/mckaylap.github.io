@@ -104,6 +104,10 @@ article {
     align-content: center;
 }
 
+footer {
+    background-color: darkolivegreen;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -119,10 +123,19 @@ article {
 #galleryheader {
     margin: 0px;
     text-align: center;
-    background-color: darkolivegreen;
+    background-color: rgb(195, 241, 115);
     min-height: 200px;
-    max-width: 100%;
+    min-width: 100%;
     align-items: center;
+}
+
+label {
+    display: inline-block;
+    min-width: 100px;
+}
+
+form div {
+    margin-top: 5px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SE Idaho Weather | Preston</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-8.css">
+    <link rel="stylesheet" href="styles/large-8.css">
+</head>
+
+<body>
+    <header id="galleryheader">
+        <h1>Southeast Idaho Weather</h1>
+        <h2>A Current Weather Forecast</h2>
+        <h3>Hike, bike, and climb to new heights!</h3>
+    </header>
+    <nav>
+        <button id="hamburgericon" onclick="toggleMenu()">&#9776</button>
+        <ul id="primarynav" class="hide" class="open">
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <form action="thanks.html" method="get">
+            <div>
+                <label for="fullName">Full name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="username@website.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="telePhone" name="phoneNumber" required>
+            </div>
+            <div>
+                <label for="zipCode">Zip Code:</label>
+                <input type="number" id="zipCode" name="zipCode" required>
+            </div>
+            <div>
+                <label for="stormDate">Storm Date:</label>
+                <input type="date" id="stormDate" name="stormDate" required>
+            </div>
+            <div>
+                <input type="submit" value="submit">
+            </div>
+
+
+
+
+
+        </form>
+    </main>
+
+
+
+    <br>
+    <footer>
+        <p>&copy; <span id="currentdate"></span> | SE ID Weather | McKayla Plummer</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
