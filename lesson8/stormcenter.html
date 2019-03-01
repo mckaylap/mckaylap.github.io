@@ -33,7 +33,7 @@
         <form action="thanks.html" method="get">
             <div>
                 <label for="fullName">Full name:</label>
-                <input type="text" id="fullName" name="fullName" required>
+                <input type="text" id="fullName" name="fullName" required pattern="([A-z]{5,}">
             </div>
             <div>
                 <label for="email">Email:</label>
@@ -51,6 +51,35 @@
                 <label for="stormDate">Storm Date:</label>
                 <input type="date" id="stormDate" name="stormDate" required>
             </div>
+            <div>
+                <label for="stormType">Storm Type:</label><br>
+                <input type="radio" id="stormType" name="stormType" value="flashFlood">Flash Flood<br>
+                <input type="radio" id="stormType" name="stormType" value="Hail">Hail<br>
+                <input type="radio" id="stormType" name="stormType" value="Hurricane">Hurricane<br>
+                <input type="radio" id="stormType" name="stormType" value="Thunderstorm">Thunderstorm<br>
+                <input type="radio" id="stormType" name="stormType" value="Tornado">Tornado<br>
+            </div>
+            <div>
+                <label for="stormSeverity">Storm Severity: (1 to 10)</label><br>
+                <input type="range" name="stormSeverity" id="stormSeverity" min="1" max="10"
+                    onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+            </div>
+            <div>
+                <label for="stormRegion">Storm Region:</label>
+                <input list="stormRegion" id="stormRegion" name="stormRegion">
+                <datalist id="stormRegion">
+                    <option value="Select Region" disabled>
+                    <option value="Preston">
+                    <option value="Soda Springs">
+                    <option value="Fish Haven">
+                </datalist>
+            </div>
+
+
+
+
+
             <div>
                 <input type="submit" value="submit">
             </div>
