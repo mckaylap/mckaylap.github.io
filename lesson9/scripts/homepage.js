@@ -91,9 +91,9 @@ var townData =
 
 
 
-document.getElementById("fishHavenName").innerHTML = townData.towns[1].name;
-document.getElementById("fishHavenMotto").innerHTML = townData.towns[1].motto;
-document.getElementById("fishHavenPopulation").innerHTML = "Population: " + townData.towns[1].currentPopulation;
+// document.getElementById("fishHavenName").innerHTML = townData.towns[1].name;
+// document.getElementById("fishHavenMotto").innerHTML = townData.towns[1].motto;
+// document.getElementById("fishHavenPopulation").innerHTML = "Population: " + townData.towns[1].currentPopulation;
 
 // for (var i=0; i< townData.towns.length; i++) {
 //     if (i === 0 || i === 2 || i===3 || i === 6) {
@@ -104,24 +104,33 @@ document.getElementById("fishHavenPopulation").innerHTML = "Population: " + town
 // }
 
 for (var i=0; i< townData.towns.length; i++) {
-    if (townData.towns[i].name === "Soda Springs") {
+    if (townData.towns[i].name === "Soda Springs" || townData.towns[i].name === "Fish Haven" || townData.towns[i].name === "Preston") {
         document.write('<h1>'+ townData.towns[i].name + '</h1>');
+        document.write('<h2>'+ townData.towns[i].motto + '</h2>');
+        document.write('<h3>'+ "Year Founded: " + townData.towns[i].yearFounded + '</h3>');
+        document.write('<h4>'+ "Population: " + townData.towns[i].currentPopulation + '</h4>')
+        document.write('<h5>'+ "Average Rainfall: " + townData.towns[i].averageRainfall + '</h5>');
 
         var imgSodaSprings = document.createElement('img');
         imgSodaSprings.setAttribute("src", "example.jpg");
     }
-    else if (townData.towns[i].name === "Fish Haven") {
-        document.write('<h1>'+ townData.towns[i].name + '</h1>');
+    // else if (townData.towns[i].name === "Fish Haven") {
+        // document.getElementById(townData.towns[i].name???).innerHTML += townData.towns[1].name;
+        // document.getElementById(townData.towns[i].name???).innerHTML += townData.towns[1].motto;
+        // document.getElementById(townData.towns[i].name???).innerHTML += townData.towns[1].currentPopulation;
+ 
+        // var imgSodaSprings = document.createElement('img');
+        // imgSodaSprings.setAttribute("src", "example.jpg");
+    // }
+    // else if (townData.towns[i].name === "Preston") {
+    //     document.write('<h1>'+ townData.towns[i].name + '</h1>');
+    //     document.write('<h2>'+ townData.towns[i].motto + '</h2>');
+    //     document.write('<h3>'+ townData.towns[i].yearFounded + '</h3>');
+    //     document.write('<h4>'+ townData.towns[i].averageRainfall + '</h4>');
 
-        var imgSodaSprings = document.createElement('img');
-        imgSodaSprings.setAttribute("src", "example.jpg");
-    }
-    else if (townData.towns[i].name === "Preston") {
-        document.write('<h1>'+ townData.towns[i].name + '</h1>');
-
-        var imgSodaSprings = document.createElement('img');
-        imgSodaSprings.setAttribute("src", "example.jpg");
-    }
+    //     var imgSodaSprings = document.createElement('img');
+    //     imgSodaSprings.setAttribute("src", "example.jpg");
+    // }
 
 }
 
