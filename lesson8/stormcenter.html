@@ -29,65 +29,69 @@
         </ul>
     </nav>
     <br>
-    <main>
+    <h2>Storm Center</h2>
+        <h3>Report a storm:</h3>
         <form action="thanks.html" method="get">
             <div>
-                <label for="fullName">Full name:</label>
-                <input type="text" id="fullName" name="fullName" required pattern="([A-z]{5,}">
+                <label for="fullName">Full Name:&nbsp;</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" required>
             </div>
             <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="username@website.com">
+                <label for="email">Email:&nbsp;</label>
+                <input type="email" id="email" name="email" placeholder="user@domain.com">
             </div>
             <div>
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="telePhone" name="phoneNumber" required>
+                <label for="phoneNumber">Phone Number:&nbsp;</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="1231231234" required>
             </div>
             <div>
-                <label for="zipCode">Zip Code:</label>
-                <input type="number" id="zipCode" name="zipCode" required>
+                <label for="zipCode">Zip Code:&nbsp;</label>
+                <input type="number" id="zipCode" name="zipCode" placeholder="12345">
             </div>
             <div>
-                <label for="stormDate">Storm Date:</label>
-                <input type="date" id="stormDate" name="stormDate" required>
+                <label for="stormDate">Storm Date: </label>
+                <input type="date" id="stormDate" name="stormDate" placeholder="mm/dd/yy" required>
             </div>
             <div>
-                <label for="stormType">Storm Type:</label><br>
-                <input type="radio" id="stormType" name="stormType" value="flashFlood">Flash Flood<br>
-                <input type="radio" id="stormType" name="stormType" value="Hail">Hail<br>
-                <input type="radio" id="stormType" name="stormType" value="Hurricane">Hurricane<br>
-                <input type="radio" id="stormType" name="stormType" value="Thunderstorm">Thunderstorm<br>
-                <input type="radio" id="stormType" name="stormType" value="Tornado">Tornado<br>
-            </div>
-            <div>
-                <label for="stormSeverity">Storm Severity: (1 to 10)</label><br>
-                <input type="range" name="stormSeverity" id="stormSeverity" min="1" max="10"
-                    onchange="adjustRating(this.value)">
-                <span id="ratingvalue">5</span><br>
-            </div>
-            <div>
-                <label for="stormRegion">Storm Region:</label>
-                <input list="stormRegion" id="stormRegion" name="stormRegion">
-                <datalist id="stormRegion">
-                    <!-- <option value="Select Region" disabled> -->
-                    <option value="Preston">
-                    <option value="Soda Springs">
-                    <option value="Fish Haven">
+                <label for="stormType">Storm Type:&nbsp;</label>
+                <input list="stormType" required>
+                <datalist id="stormType">
+                    <option value = "Flash Flood"></option>
+                    <option value = "Hail"></option>
+                    <option value = "Hurricane"></option>
+                    <option value = "Snow Storm"></option>
+                    <option value = "Thunderstorm"></option>
+                    <option value = "Tornado"></option>
                 </datalist>
             </div>
-
-
-
-
-
             <div>
-                <input type="submit" value="submit">
+                <label for="stormSeverity">Storm Severity:&nbsp;</label>
+                <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1" 
+                oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                <span id="stormvalue">5</span><br>
             </div>
-
-
-
-
-
+            <div>
+                <label for="stormRegion">Storm Region:&nbsp;</label>
+                <select name="stormRegion">
+                    <option>Please Select</option>
+                    <option value = "Preston">Preston</option>
+                    <option value = "Soda Springs">Soda Springs</option>
+                    <option value = "Fish Haven">Fish Haven</option>
+                </select>
+            </div>
+            <div>
+                <label for="inDanger" id="inDanger">User in-danger?</label><br>
+                <input type="radio" name="inDanger" value="yes">Yes &nbsp;
+                <input type="radio" name="inDanger" value="maybe">Maybe &nbsp;
+                <input type="radio" name="inDanger" value="no">No &nbsp;
+            </div>
+            <div>
+                <label for="addInfo">Additional Information or Comments: </label><br>
+                <textarea rows="5" cols="33"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </main>
 
@@ -100,6 +104,8 @@
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/stormseverity.js"></script>
 </body>
 
 </html>
+
