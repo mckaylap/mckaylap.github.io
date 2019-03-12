@@ -84,4 +84,59 @@ nav {
  background-color: darkolivegreen; 
 }
 
+/* gallery */
+#photogallery{
+  display: grid;
+  grid-row-gap: 1rem;
+}
+
+div.gallery {
+  margin: auto;
+  border: 1px solid #ccc;
+  max-width: 80%;
+}
+#field {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#dock {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#bench {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#snow {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#ice {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#snowtrees {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+.desc{
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.gallery :hover{
+  box-shadow: 5px 5px 40px 1px;
+}
+
 }
