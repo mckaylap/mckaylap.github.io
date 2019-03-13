@@ -1,0 +1,143 @@
+@media only screen and (min-width: 600px) {
+
+  #mainheader {
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    background-image: url("../images/pinecones_widescreen.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-position-y: inherit;
+    max-height: 600px;
+    min-width: 100%;  
+    background-color: #ffffff;
+}
+
+h1 {
+    padding: 0px 0px 0px 0px;
+    letter-spacing: inherit;
+    line-height: 50px; 
+    font-size: 48px; 
+    color: darkolivegreen; 
+    font-family: Georgia;
+}
+
+h2 {
+    margin: 10px;
+    font-size: 38px; 
+    color: darkolivegreen; 
+}
+
+h3 {
+    padding: 10px;
+    font-size: 24px;
+    color:  darkolivegreen;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    /* overflow: hidden; */
+    background-color: rgb(67, 85, 37);
+    width: 70%;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+    
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+#fivedayforecast {
+    display: block;
+    font-size: 32px;
+   
+}
+
+h4 {
+  font-size: 32px;
+}
+
+#dayforecast {
+  border-color: darkolivegreen;
+  border-style: solid;
+  border-width: 5px;
+  font-size: 28px;
+
+}
+
+button#hamburgericon {
+  display: none;
+}
+
+nav {
+ background-color: darkolivegreen; 
+}
+
+/* gallery */
+#photogallery{
+  display: grid;
+  grid-row-gap: 1rem;
+}
+
+div.gallery {
+  margin: auto;
+  border: 1px solid #ccc;
+  max-width: 80%;
+}
+#field {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#dock {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#bench {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#snow {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#ice {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#snowtrees {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+.desc{
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.gallery :hover{
+  box-shadow: 5px 5px 40px 1px;
+}
+
+}
+
