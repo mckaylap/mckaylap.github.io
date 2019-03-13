@@ -43,7 +43,8 @@ request.onload = function () {
             section.appendChild(h3);
             section.appendChild(motto);
             section.appendChild(yearFounded);
-            // append population and average rainfall here
+            section.appendChild(population);
+            section.appendChild(averageRainfall);
             section.appendChild(img);
 
             var main = document.querySelector('main');

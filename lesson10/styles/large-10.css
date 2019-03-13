@@ -139,5 +139,47 @@ div.gallery {
   box-shadow: 5px 5px 40px 1px;
 }
 
+/* homepage json */
+main#grid{
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+  align-content: center;
+}
+
+main#grid section {
+  margin: auto;
+  border: 5px solid darkolivegreen;
+  max-width: 80%;
+}
+main#grid section:first-child {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+main#grid section {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+main#grid section:last-child {
+  grid-column: 3;
+  grid-row: 1;
+}  
+
+main#grid section img{
+  width: 100%;
+}
+
+main#grid section:hover{
+  box-shadow: 5px 5px 40px 1px;
+}
+
+main#grid section p,h3{
+  text-align: center;
+  /* padding-bottom: 1rem;
+  padding-top: 1rem; */
+} 
+
 }
 

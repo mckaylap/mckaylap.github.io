@@ -179,5 +179,42 @@ form div {
         text-align: center;
 
 }
+/* homepage json */
+main#grid{
+    display: grid;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  main#grid {
+    margin: auto;
+    border: 1px solid #ccc;
+    max-width: 80%;
+  }
+
+  main#grid {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #fishhaven {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  #sodasprings {
+    grid-column: 3;
+    grid-row: 1;
+  } 
+  
+  main#grid section img{
+    width: 100%;
+  }
+  
+  main#grid section:hover{
+    box-shadow: 5px 5px 40px 1px;
+  }
+  
 
 }
