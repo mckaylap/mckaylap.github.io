@@ -105,11 +105,11 @@ var townData =
 
 for (var i=0; i< townData.towns.length; i++) {
     if (townData.towns[i].name === "Soda Springs" || townData.towns[i].name === "Fish Haven" || townData.towns[i].name === "Preston") {
-        document.write('<h1>'+ townData.towns[i].name + '</h1>');
-        document.write('<h2>'+ townData.towns[i].motto + '</h2>');
-        document.write('<h3>'+ "Year Founded: " + townData.towns[i].yearFounded + '</h3>');
-        document.write('<h4>'+ "Population: " + townData.towns[i].currentPopulation + '</h4>')
-        document.write('<h5>'+ "Average Rainfall: " + townData.towns[i].averageRainfall + '</h5>');
+        document.write('<h3>'+ townData.towns[i].name + '</h3>');
+        document.write('<p>'+ townData.towns[i].motto + '</p>');
+        document.write('<p>'+ "Year Founded: " + townData.towns[i].yearFounded + '</p>');
+        document.write('<p>'+ "Population: " + townData.towns[i].currentPopulation + '</p>')
+        document.write('<p>'+ "Average Rainfall: " + townData.towns[i].averageRainfall + '</p>');
 
         var imgSodaSprings = document.createElement('img');
         imgSodaSprings.setAttribute("src", "example.jpg");
