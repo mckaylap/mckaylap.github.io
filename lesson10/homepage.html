@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SE Idaho Weather | Preston</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-8.css"> 
+    <link rel="stylesheet" href="styles/large-8.css">
 </head>
 <body>
-
-    <!-- <h1 id= "fishHavenName"></h1>
+    <header id="galleryheader">        
+        <h1>Southeast Idaho Weather</h1>
+        <h2>A Current Weather Forecast</h2>
+        <h3>Hike, bike, and climb to new heights!</h3>
+    </header>
+        <nav>
+            <button id= "hamburgericon" onclick= "toggleMenu()">&#9776</button>
+            <ul id="primarynav" class="hide" class="open">
+                <li><a href= "#">Home</a></li>
+                <li><a href= "preston-8.html">Preston</a></li>
+                <li><a href= "#">Soda Springs</a></li>
+                <li><a href= "#">Fish Haven</a></li>
+                <li><a href= "#">Storm Center</a></li>
+                <li class="active"><a href= "gallery-8.html">Gallery</a></li>
+            </ul>
+        </nav>
+          <!-- <h1 id= "fishHavenName"></h1>
     <h2 id= "fishHavenMotto"></h2>
     <p id="fishHavenPopulation"></p> -->
 <!-- 
@@ -17,7 +35,13 @@
         <p>Year Founded: </p>
         <p>Population: </p>
         <p>Average Rainfall: </p> -->
-    
-<script src="scripts/homepage.js"></script>
+    <footer>
+
+        <p>&copy; <span id="currentdate"></span> | SE ID Weather | McKayla Plummer</p>
+    </footer>
+    <script src="scripts/homepage.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
