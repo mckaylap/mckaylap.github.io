@@ -16,19 +16,19 @@ console.log(weatherData);
 document.getElementById("current-temp").innerHTML = weatherData.main.temp;
 }
 
-var apiURLforecast = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=013d6d29c603417bd1d69a7c49208244&units=imperial';
+// var apiURLforecast = 'http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=013d6d29c603417bd1d69a7c49208244&units=imperial';
 
-var forecastRequest = new XMLHttpRequest();
-forecastRequest.open('GET', apiURLforecast, true);
-forecastRequest.responseType = 'json';
-forecastRequest.send();
+// var forecastRequest = new XMLHttpRequest();
+// forecastRequest.open('GET', apiURLforecast, true);
+// forecastRequest.responseType = 'json';
+// forecastRequest.send();
 
-forecastRequest.onload =  function () {
+// forecastRequest.onload =  function () {
 
-    var forecastData = forecastRequest.response;
+//     var forecastData = forecastRequest.response;
 
-// Forecast Temp
-console.log(forecastData);
+// // Forecast Temp
+// console.log(forecastData);
 
-document.getElementById("forecast-temp").innerHTML = forecastData.main.temp;
-}
+// document.getElementById("forecast-temp").innerHTML = forecastData.main.temp;
+// }
