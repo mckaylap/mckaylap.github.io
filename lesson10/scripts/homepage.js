@@ -33,11 +33,11 @@ request.onload = function () {
             var img = document.createElement('img');
 
             if (townData.towns[i].name === "Soda Springs") {
-                img.setAttribute("src", "../images/example.jpg");
+                img.setAttribute("src", "images/sodaspringsish.jpg");
             } else if (townData.towns[i].name === "Fish Haven") {
-                img.setAttribute("src", "../images/example.jpg");
+                img.setAttribute("src", "images/fishhavenish.jpg");
             } else if (townData.towns[i].name === "Preston") {
-                img.setAttribute("src", "../images/example.jpg");
+                img.setAttribute("src", "images/prestonish.jpg");
             }
 
             section.appendChild(h3);
