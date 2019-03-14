@@ -175,7 +175,7 @@ main#grid section:hover{
   box-shadow: 5px 5px 40px 1px;
 }
 
-main#grid section p,h3{
+main#grid section p, main#grid section h3{
   text-align: center;
   /* padding-bottom: 1rem;
   padding-top: 1rem; */
