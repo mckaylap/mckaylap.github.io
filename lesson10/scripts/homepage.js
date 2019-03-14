@@ -40,12 +40,23 @@ request.onload = function () {
                 img.setAttribute("src", "images/prestonish.jpg");
             }
 
+            // var link = document.createElement('href');
+
+            // if (townData.towns[i].name === "Soda Springs") {
+            //     link.setAttribute("src", "#");
+            // } else if (townData.towns[i].name === "Fish Haven") {
+            //     link.setAttribute("src", "#");
+            // } else if (townData.towns[i].name === "Preston") {
+            //     link.onclick("src", "../preston.html");
+            // }
+
             section.appendChild(h3);
             section.appendChild(motto);
             section.appendChild(yearFounded);
             section.appendChild(population);
             section.appendChild(averageRainfall);
             section.appendChild(img);
+            // section.appendChild(link)
 
             var main = document.querySelector('main');
             main.appendChild(section);
