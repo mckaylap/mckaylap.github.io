@@ -151,6 +151,8 @@ main#grid{
   grid-row-gap: 1rem;
   grid-column-gap: 2rem;
   align-content: center;
+  -ms-grid-row-align: center;
+  -ms-grid-column-align: center;
 }
 
 main#grid section {
