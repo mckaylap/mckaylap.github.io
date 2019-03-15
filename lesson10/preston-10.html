@@ -35,6 +35,8 @@
     <img src="images/prestonlandscape.jpg" alt="Preston in Snow" width="70%">
     <br>
     The Weather in Idaho is very cold during this time of year. But the winter landscapes are beautiful. <br><br>
+    <h2>Current Weather</h2>
+    <img id="current-icon" alt="currentweather" i><br>
     <span>Temperature: </span><span id="temp"></span><br>
     <span>Windspeed: </span><span id="windSpeed"></span><br>
     <span>Windchill: </span><span id="windChill"></span><br>
@@ -44,18 +46,18 @@
         <h4>5-Day Forecast</h4>
         <table id="dayforecast">
             <tr>
-                <td id="day1">Mon</td>
-                <td id="day2">Tue</td>
-                <td id="day3">Wed</td>
-                <td id="day4">Fri</td>
-                <td id="day5">Sat</td>
+                <td id="day1"></td>
+                <td id="day2"></td>
+                <td id="day3"></td>
+                <td id="day4"></td>
+                <td id="day5"></td>
             </tr>
             <tr>
-                <td id="temp1">30&deg;</td>
-                <td id="temp2">32&deg;</td>
-                <td id="temp3">35&deg;</td>
-                <td id="temp4">33&deg;</td>
-                <td id="temp5">32&deg;</td>
+                <td id="temp1">&deg;</td>
+                <td id="temp2">&deg;</td>
+                <td id="temp3">&deg;</td>
+                <td id="temp4">&deg;</td>
+                <td id="temp5">&deg;</td>
             </tr>
         </table>
     </section>
@@ -79,8 +81,9 @@
         </map> -->
         <p>&copy; <span id="currentdate"></span> | SE ID Weather | McKayla Plummer</p>
     </footer>
+    <script src="scripts/weatherjson.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
 </body>
 </html>
