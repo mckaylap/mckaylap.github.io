@@ -57,19 +57,25 @@ ul {
     padding: 10px 20px;
     text-decoration: none;
   }
-  
-#fivedayforecast {
-    display: block;
-    font-size: 32px;
-   
-}
+
 
 h4 {
   font-size: 32px;
 }
 
+/* main img {
+  float: right;
+} */
+
+#fivedayforecast {
+  display: block;
+  font-size: 32px;
+ 
+}
+
 #dayforecast {
   border-color: darkolivegreen;
+  padding: 5px;
   border-style: solid;
   border-width: 5px;
   font-size: 28px;
