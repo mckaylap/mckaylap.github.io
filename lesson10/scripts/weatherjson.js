@@ -46,7 +46,7 @@ forecastRequest.onload = function () {
     var forecastData = forecastRequest.response;
 
     // Forecast Temp
-    console.log(forecastData);
+    console.log(forecastData.main.temp);
 
     document.getElementById("dayforecast").innerHTML = forecastData.main.temp;
 }
