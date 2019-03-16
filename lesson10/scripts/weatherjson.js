@@ -27,7 +27,7 @@ weatherRequest.onload = function () {
     // document.getElementById("temp").innerHTML = weatherData.main.temp;
     // document.getElementById("windSpeed").innerHTML = weatherData.wind.speed;
     // document.getElementById("windChill").innerHTML = weatherData.wind.windchill;
-
+  
 
     //icon
     document.getElementById("current-icon").setAttribute("src", 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
