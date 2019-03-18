@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SE Idaho Weather | Preston</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-10.css">
+    <link rel="stylesheet" href="styles/large-10.css">
+</head>
+
+<body>
+    <header id="galleryheader">
+        <h1>Southeast Idaho Weather</h1>
+        <h2>A Current Weather Forecast</h2>
+        <h3>Hike, bike, and climb to new heights!</h3>
+    </header>
+    <nav>
+        <button id="hamburgericon" onclick="toggleMenu()">&#9776</button>
+        <ul id="primarynav" class="hide" class="open">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h2>Storm Center</h2>
+        <h3>Report a storm:</h3>
+        <form action="thanks.html" method="get">
+            <div>
+                <label for="fullName">Full Name:&nbsp;</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" required>
+            </div>
+            <div>
+                <label for="email">Email:&nbsp;</label>
+                <input type="email" id="email" name="email" placeholder="user@domain.com">
+            </div>
+            <div>
+                <label for="phoneNumber">Phone Number:&nbsp;</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="1231231234" required>
+            </div>
+            <div>
+                <label for="zipCode">Zip Code:&nbsp;</label>
+                <input type="number" id="zipCode" name="zipCode" placeholder="12345">
+            </div>
+            <div>
+                <label for="stormDate">Storm Date: </label>
+                <input type="date" id="stormDate" name="stormDate" placeholder="mm/dd/yy" required>
+            </div>
+            <div>
+                <label for="stormType">Storm Type:&nbsp;</label>
+                <input list="stormType" required>
+                <datalist id="stormType">
+                    <option value = "Flash Flood"></option>
+                    <option value = "Hail"></option>
+                    <option value = "Hurricane"></option>
+                    <option value = "Snow Storm"></option>
+                    <option value = "Thunderstorm"></option>
+                    <option value = "Tornado"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="stormSeverity">Storm Severity:&nbsp;</label>
+                <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1" 
+                oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                <span id="stormvalue">5</span><br>
+            </div>
+            <div>
+                <label for="stormRegion">Storm Region:&nbsp;</label>
+                <select name="stormRegion">
+                    <option>Please Select</option>
+                    <option value = "Preston">Preston</option>
+                    <option value = "Soda Springs">Soda Springs</option>
+                    <option value = "Fish Haven">Fish Haven</option>
+                </select>
+            </div>
+            <div>
+                <label for="inDanger" id="inDanger">User in-danger?</label><br>
+                <input type="radio" name="inDanger" value="yes">Yes &nbsp;
+                <input type="radio" name="inDanger" value="maybe">Maybe &nbsp;
+                <input type="radio" name="inDanger" value="no">No &nbsp;
+            </div>
+            <div>
+                <label for="addInfo">Additional Information or Comments: </label><br>
+                <textarea rows="5" cols="33"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+
+
+
+    <br>
+    <footer>
+        <p>&copy; <span id="currentdate"></span> | SE ID Weather | McKayla Plummer</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/stormseverity.js"></script>
+</body>
+
+</html>

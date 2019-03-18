@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SE Idaho Weather | Preston</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small-10.css"> 
+    <link rel="stylesheet" href="styles/medium-10.css">
+    <link rel="stylesheet" href="styles/large-10.css">
+</head>
+<body>
+    <header id="galleryheader">        
+        <h1>Southeast Idaho Weather</h1>
+        <h2>A Current Weather Forecast</h2>
+        <h3>Hike, bike, and climb to new heights!</h3>
+    </header>
+        <nav>
+            <button id= "hamburgericon" onclick= "toggleMenu()">&#9776</button>
+            <ul id="primarynav" class="hide" class="open">
+                <li><a href= "homepage.html">Home</a></li>
+                <li><a href= "preston-10.html">Preston</a></li>
+                <li><a href= "#">Soda Springs</a></li>
+                <li><a href= "#">Fish Haven</a></li>
+                <li><a href= "stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href= "gallery-10.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+        <h2>The Gallery</h2>
+        <section id="photogallery">
+            <div class="gallery" id="Field">
+                <img src="images/agriculture-bright-clouds-440731.jpg" alt="field" class="galleryimages">
+                <div class="desc">Field</div>
+            </div>
+            <br>
+            <div class="gallery" id="dock">
+                <img src="images/beautiful-beauty-blue-414612.jpg" alt="dock" class="galleryimages">
+                <div class="desc">Dock</div>
+            </div>
+            <br>
+            <div class="gallery" id="bench">
+                <img src="images/bench-cold-empty-209839.jpg" alt="bench" class="galleryimages">
+                <div class="desc">Cold Bench</div>
+            </div>
+            <br>
+            <div class="gallery" id="snow">
+                <img src="images/cold-snow-white-60561.jpg" alt="snow" class="galleryimages">
+                <div class="desc">Snow Detail</div>
+            </div>
+            <br>
+            <div class="gallery" id="ice">
+                <img src="images/cold-environment-frozen-1679610.jpg" alt="ice" class="galleryimages">
+                <div class="desc">Icicle</div>
+            </div>
+            <br>
+            <div class="gallery" id="snowtrees">
+                <img src="images/snowtrees.jpg" alt="snowtrees" class="galleryimages">
+                <div class="desc">Trees in snow</div>
+            </div>
+            <br>
+        </section>
+        </main>
+        
+    <footer>
+
+        
+        <p>&copy; <span id="currentdate"></span> | SE ID Weather | McKayla Plummer</p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>
