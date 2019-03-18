@@ -1,6 +1,6 @@
 // create script to get the date
 
-//
+//today
 var today= new Date();
 
 //array to get weekday

@@ -27,7 +27,7 @@ weatherRequest.onload = function () {
     // document.getElementById("temp").innerHTML = weatherData.main.temp;
     // document.getElementById("windSpeed").innerHTML = weatherData.wind.speed;
     // document.getElementById("windChill").innerHTML = weatherData.wind.windchill;
-  
+
 
     //icon
     document.getElementById("current-icon").setAttribute("src", 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
@@ -43,10 +43,47 @@ forecastRequest.send();
 
 forecastRequest.onload = function () {
 
+    //today
+    var today = new Date();
+
+    //array to get weekday
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+
+    //get weekday
+    var dayOfWeek = weekday[today.getDay()];
+    var tomorrow = weekday[today.getDay()+1];
+    var dayAfterTomorrow = weekday[today.getDay()+2];
+    var dayAfterAfter = weekday[today.getDay()+3];
+    var lastday = weekday[today.getDay()+4];
+
     var forecastData = forecastRequest.response;
 
     // Forecast Temp
-    console.log(forecastData.main.temp);
+    console.log(forecastData.list);
 
-    document.getElementById("dayforecast").innerHTML = forecastData.main.temp;
+    //document.getElementById("fivedayforecast").innerHTML = forecastData.list[0].main.temp;
+     document.getElementById("day1").innerhtml = dayOfWeek;
+     document.getElementById("icon1").innerhtml = forecastData.list[0].weather.icon;
+     document.getElementById("temp1").innerhtml = forecastData.list[0].main.temp;
+     document.getElementById("day2").innerhtml = tomorrow;
+     document.getElementById("icon2").innerhtml = forecastData.list[1].weather.icon;
+     document.getElementById("temp2").innerhtml = forecastData.list[1].main.temp;
+     document.getElementById("day3").innerhtml = dayAfterTomorrow;
+     document.getElementById("icon3").innerhtml = forecastData.list[2].weather.icon;
+     document.getElementById("temp3").innerhtml = forecastData.list[2].main.temp;
+     document.getElementById("day4").innerhtml = dayAfterAfter;
+     document.getElementById("icon4").innerhtml = forecastData.list[3].weather.icon;
+     document.getElementById("temp4").innerhtml = forecastData.list[3].main.temp;
+     document.getElementById("day5").innerhtml = lastday;
+     document.getElementById("icon5").innerhtml = forecastData.list[4].weather.icon;
+     document.getElementById("temp5").innerhtml = forecastData.list[4].main.temp;
+
 }
