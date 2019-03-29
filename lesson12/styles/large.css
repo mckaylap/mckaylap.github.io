@@ -10,7 +10,7 @@
     background-position-y: inherit;
     max-height: 600px;
     min-width: 100%;  
-    background-color: #ffffff;
+    background-color: #a9f8eb;
 }
 
 h1 {
@@ -18,20 +18,20 @@ h1 {
     letter-spacing: inherit;
     line-height: 50px; 
     font-size: 48px; 
-    color: darkolivegreen; 
+    color: #000000; 
     font-family: Georgia;
 }
 
 h2 {
     margin: 10px;
     font-size: 38px; 
-    color: darkolivegreen; 
+    color: #000000; 
 }
 
 h3 {
     padding: 10px;
     font-size: 24px;
-    color:  darkolivegreen;
+    color:  #000000;
 }
 
 ul {
@@ -39,7 +39,7 @@ ul {
     margin: 0 auto;
     padding: 0;
     /* overflow: hidden; */
-    background-color: rgb(67, 85, 37);
+    background-color: rgb(168, 245, 200);
     width: 70%;
     text-align: center;
   }
@@ -87,7 +87,7 @@ button#hamburgericon {
 }
 
 nav {
- background-color: darkolivegreen; 
+ background-color: rgb(120, 252, 208); 
 }
 
 /* gallery */
@@ -157,7 +157,7 @@ main#grid{
 
 main#grid section {
   margin: auto;
-  border: 5px solid darkolivegreen;
+  border: 5px solid rgb(108, 243, 214);
   max-width: 80%;
 }
 main#grid section:first-child {
