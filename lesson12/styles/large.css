@@ -150,6 +150,7 @@ main#grid{
   display: grid;
   grid-row-gap: 1rem;
   grid-column-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-content: center;
   -ms-grid-row-align: center;
   -ms-grid-column-align: center;
@@ -160,6 +161,8 @@ main#grid section {
   border: 5px solid rgb(108, 243, 214);
   max-width: 80%;
 }
+
+/*
 main#grid section:first-child {
   grid-column: 1;
   grid-row: 1;
@@ -173,7 +176,7 @@ main#grid section {
 main#grid section:last-child {
   grid-column: 3;
   grid-row: 1;
-}  
+}   */
 
 main#grid section img{
   width: 100%;

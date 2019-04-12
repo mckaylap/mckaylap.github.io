@@ -1,52 +1,52 @@
-const templeData=[
-    // {
-    //     "name": "Rexburg Idaho Temple",
-    //     "location": "Rexburg, Idaho, United States",
-    //     "phone": "(1) 208-656-0880",
-    //     "address": "750 S 2nd E, Rexburg, ID 83440",
-    //     "closures": [
-    //         {
-    //             "start": "2019-04-15",
-    //             "end": "2019-04-29"
-    //         },
-    //         {
-    //             "start": "2019-07-04",
-    //             "end": "2019-07-04"
-    //         },
-    //         {
-    //             "start": "2019-07-27",
-    //             "end": "2019-07-27"
-    //         },
-    //         {
-    //             "start": "2019-09-2",
-    //             "end": "2019-09-16"
-    //         },
-    //         {
-    //             "start": "2019-10-5",
-    //             "end": "2019-10-5"
-    //         }
-    //     ],
-    //     "services": 
-    //         {
-    //         "clothing": "Clothing rental available",
-    //         "food": "No cafeteria available",
-    //         "DB": "Distribution center nearby"
-    //         },
-    //     "history": 
-    //         {
-    //         "announced": "2003-12-12",
-    //         "groundbreaking": "2005-07-30",
-    //         "dedicated": "2008-02-10"
-    //         }
-    //     ,
-    //     "schedule": [
-    //         {
-    //         "endowment sessions": "Every 45min"
-    //         }
-    //     ],
-    //     "picture": "images/rexburgtemple.jpg"
+[
+    {
+        "name": "Rexburg Idaho Temple",
+        "location": "Rexburg, Idaho, United States",
+        "phone": "(1) 208-656-0880",
+        "address": "750 S 2nd E, Rexburg, ID 83440",
+        "closures": [
+            {
+                "start": "2019-04-15",
+                "end": "2019-04-29"
+            },
+            {
+                "start": "2019-07-04",
+                "end": "2019-07-04"
+            },
+            {
+                "start": "2019-07-27",
+                "end": "2019-07-27"
+            },
+            {
+                "start": "2019-09-2",
+                "end": "2019-09-16"
+            },
+            {
+                "start": "2019-10-5",
+                "end": "2019-10-5"
+            }
+        ],
+        "services": 
+            {
+            "clothing": "Clothing rental available",
+            "food": "No cafeteria available",
+            "DB": "Distribution center nearby"
+            },
+        "history": 
+            {
+            "announced": "2003-12-12",
+            "groundbreaking": "2005-07-30",
+            "dedicated": "2008-02-10"
+            }
+        ,
+        "schedule": [
+            {
+            "endowment sessions": "Every 45min"
+            }
+        ],
+        "picture": "images/rexburgtemple.jpg"
         
-    // },
+    },
     {
         "name": "Portland Oregon Temple",
         "location": "Portland, Oregon, United States",
@@ -156,4 +156,4 @@ const templeData=[
         "picture": "images/sandiegotemple.jpg"
         
     }
-];
+]

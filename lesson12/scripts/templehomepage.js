@@ -1,18 +1,19 @@
-// var requestURL = "https://mckaylap.github.io/lesson12/temples.json"
-// var request = new XMLHttpRequest();
-// request.open('GET', requestURL);
-// request.responseType = 'json';
-// request.send();
+var requestURL = "json/temples.json"
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
 
 
-// request.onload = function () {
-//     var templeData = request.response;
+request.onload = function () {
+    var templeData = request.response;
 
 // var templeData = JSON.parse(temples.json)
 
     for (var i = 0; i < templeData.length; i++) {
 
             var section = document.createElement('section');
+            var link = document.createElement('a');
 
             var h3 = document.createElement('h3');
             h3.textContent = templeData[i].name;
@@ -42,13 +43,13 @@
             //     img.setAttribute("src", "images/rexburgtemple.jpg");
             // }
 
-            // var link = document.createElement('href');
+            // var link = document.createElement('a');
 
-            // if (townData.towns[i].name === "Soda Springs") {
+            // if (templeData[i].name === "preston") {
+            //     link.setAttribute("src", "prestontemple.html");
+            // } else if (templeData[i].name === "Portland") {
             //     link.setAttribute("src", "#");
-            // } else if (townData.towns[i].name === "Fish Haven") {
-            //     link.setAttribute("src", "#");
-            // } else if (townData.towns[i].name === "Preston") {
+            // } else if (temple.towns[i].name === "Preston") {
             //     link.onclick("src", "../preston.html");
             // }
 
@@ -58,9 +59,10 @@
             section.appendChild(clothing);
             section.appendChild(food);
             section.appendChild(img);
-            // section.appendChild(link)
+            section.appendChild(link)
 
             var main = document.querySelector('main');
             main.appendChild(section);
         }
+    }
     
