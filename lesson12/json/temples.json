@@ -30,7 +30,7 @@
             {
             "clothing": "Clothing rental available",
             "food": "No cafeteria available",
-            "DB": "Distribution center nearby"
+            "db": "Distribution center nearby"
             },
         "history": 
             {
@@ -41,7 +41,7 @@
         ,
         "schedule": [
             {
-            "endowment sessions": "Every 45min"
+            "sessions": "Every 45min"
             }
         ],
         "picture": "images/rexburgtemple.jpg"

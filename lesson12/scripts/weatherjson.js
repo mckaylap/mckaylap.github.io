@@ -1,4 +1,4 @@
-var apiURLstring = 'http://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=013d6d29c603417bd1d69a7c49208244&units=imperial';
+var apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=013d6d29c603417bd1d69a7c49208244&units=imperial';
 
 
 var weatherRequest = new XMLHttpRequest();
