@@ -1,0 +1,159 @@
+const templeData=[
+    // {
+    //     "name": "Rexburg Idaho Temple",
+    //     "location": "Rexburg, Idaho, United States",
+    //     "phone": "(1) 208-656-0880",
+    //     "address": "750 S 2nd E, Rexburg, ID 83440",
+    //     "closures": [
+    //         {
+    //             "start": "2019-04-15",
+    //             "end": "2019-04-29"
+    //         },
+    //         {
+    //             "start": "2019-07-04",
+    //             "end": "2019-07-04"
+    //         },
+    //         {
+    //             "start": "2019-07-27",
+    //             "end": "2019-07-27"
+    //         },
+    //         {
+    //             "start": "2019-09-2",
+    //             "end": "2019-09-16"
+    //         },
+    //         {
+    //             "start": "2019-10-5",
+    //             "end": "2019-10-5"
+    //         }
+    //     ],
+    //     "services": 
+    //         {
+    //         "clothing": "Clothing rental available",
+    //         "food": "No cafeteria available",
+    //         "DB": "Distribution center nearby"
+    //         },
+    //     "history": 
+    //         {
+    //         "announced": "2003-12-12",
+    //         "groundbreaking": "2005-07-30",
+    //         "dedicated": "2008-02-10"
+    //         }
+    //     ,
+    //     "schedule": [
+    //         {
+    //         "endowment sessions": "Every 45min"
+    //         }
+    //     ],
+    //     "picture": "images/rexburgtemple.jpg"
+        
+    // },
+    {
+        "name": "Portland Oregon Temple",
+        "location": "Portland, Oregon, United States",
+        "phone": "(1) 503-639-7066",
+        "address": "13600 Kruse Oaks Blvd Lake Oswego, OR 97035",
+        "closures": [
+            {
+                "start": "2019-07-04",
+                "end": "2019-07-04"
+            },
+            {
+                "start": "2019-07-29",
+                "end": "2019-08-12"
+            },
+            {
+                "start": "2019-10-5",
+                "end": "2019-10-5"
+            }
+        ],
+        "services": 
+        {
+            "clothing": "Clothing rental available",
+            "food": "Cafeteria available",
+            "DB": "Distribution center nearby"
+        },
+        "history":             
+            {"announced": "1984-04-7",
+            "groundbreaking": "1986-09-20",            
+            "dedicated": "1989-08-19"
+    }
+        ,
+        "schedule": [
+            {
+            "endowment sessions": "Every hour"
+            }
+        ],
+        "picture": "images/portlandtemple.jpg"
+        
+    },
+    {
+        "name": "Preston England Temple",
+        "location": "Preston, England",
+        "phone": "(44) 1257-226-100",
+        "address": "Temple Way, Hartwood Green Chorley Lancashire, England, UK PR6 7EQ",
+        "closures": [
+            {
+                "start": "2019-07-15",
+                "end": "2019-07-29"
+            },
+            {
+                "start": "2019-10-5",
+                "end": "2019-10-5"
+            }
+        ],
+        "services": {
+            "clothing": "Clothing rental available",            
+            "food": "Cafeteria available",            
+            "DB": "Distribution center nearby"
+        }
+        ,
+        "history": 
+            {
+            "announced": "1992-10-19",
+            "groundbreaking": "1994-06-12",
+            "dedicated": "1998-06-7"
+            }
+        ,
+        "schedule": [
+            {
+            "endowment sessions": "Every hour"
+            }
+        ],
+        "picture": "images/prestontemple.jpg"
+    },
+    {
+        "name": "San Diego California Temple",
+        "location": "San Diego, CA",
+        "phone": "(1) 858-622-0991",
+        "address": "7474 Charmant Dr San Diego, CA 92122",
+        "closures": [
+            {
+                "start": "2019-07-4",
+                "end": "2019-07-4"
+            },
+            {
+                "start": "2019-09-30",
+                "end": "2019-11-11"
+            }
+        ],
+        "services": 
+            {
+            "clothing": "Clothing rental available",
+            "food": "Cafeteria available",
+            "DB": "Distribution center nearby"
+            },
+        "history": 
+            {
+            "announced": "1984-4-7",
+            "groundbreaking": "1988-2-27",
+            "dedicated": "1993-04-12"
+            },
+        "schedule": [
+            {
+            "endowment sessions": "Every hour"
+            }
+        ],
+        "picture": "images/sandiegotemple.jpg"
+        
+    }
+];

@@ -1,44 +1,46 @@
-var requestURL = "https://mckaylap.github.io/lesson12/temples.json"
-var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
-request.send();
+// var requestURL = "https://mckaylap.github.io/lesson12/temples.json"
+// var request = new XMLHttpRequest();
+// request.open('GET', requestURL);
+// request.responseType = 'json';
+// request.send();
 
 
-request.onload = function () {
-    var templeData = request.response;
+// request.onload = function () {
+//     var templeData = request.response;
 
+// var templeData = JSON.parse(temples.json)
 
-    for (var i = 0; i < templeData.temples.length; i++) {
+    for (var i = 0; i < templeData.length; i++) {
 
             var section = document.createElement('section');
 
             var h3 = document.createElement('h3');
-            h3.textContent = templeData.temples[i].name;
+            h3.textContent = templeData[i].name;
             
             var address = document.createElement('p');
-            address.textContent = templeData.temples[i].address;
+            address.textContent = templeData[i].address;
             
             var dedicated = document.createElement('p');
-            dedicated.textContent = "Dedicated: " + templeData.temples[i].dedicated;
+            dedicated.textContent = "Dedicated: " + templeData[i].history.dedicated;
 
            var clothing = document.createElement ('p');
-           clothing.textContent = templeData.temples[i].services.clothing;
+           clothing.textContent = templeData[i].services.clothing;
 
            var food = document.createElement ('p');
-           food.textContent = templeData.temples[i].services.food;
+           food.textContent = templeData[i].services.food;
 
             var img = document.createElement('img');
+            img.src = templeData[i].picture;
 
-            if (templeData.temples[i].name === "Portland") {
-                img.setAttribute("src", "images/portlandtemple.jpg");
-            } else if (templeData.temples[i].name === "Preston") {
-                img.setAttribute("src", "images/prestontemple.jpg");
-            } else if (templeData.temples[i].name === "sandiego") {
-                img.setAttribute("src", "images/sandiegotemple.jpg");
-            } else if (templeData.temples[i].name === "rexburg") {
-                img.setAttribute("src", "images/rexburgtemple.jpg");
-            }
+            // if (templeData[i].name === "Portland") {
+            //     img.setAttribute("src", "images/portlandtemple.jpg");
+            // } else if (templeData[i].name === "Preston") {
+            //     img.setAttribute("src", "images/prestontemple.jpg");
+            // } else if (templeData[i].name === "sandiego") {
+            //     img.setAttribute("src", "images/sandiegotemple.jpg");
+            // } else if (templeData[i].name === "rexburg") {
+            //     img.setAttribute("src", "images/rexburgtemple.jpg");
+            // }
 
             // var link = document.createElement('href');
 
@@ -51,14 +53,14 @@ request.onload = function () {
             // }
 
             section.appendChild(h3);
-            section.appendChild(motto);
-            section.appendChild(yearFounded);
-            section.appendChild(population);
-            section.appendChild(averageRainfall);
+            section.appendChild(address);
+            section.appendChild(dedicated);
+            section.appendChild(clothing);
+            section.appendChild(food);
             section.appendChild(img);
             // section.appendChild(link)
 
             var main = document.querySelector('main');
             main.appendChild(section);
         }
-    }
+    
