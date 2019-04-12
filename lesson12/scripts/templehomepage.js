@@ -1,4 +1,4 @@
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = "https://mckaylap.github.io/lesson12/temples.json"
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -6,37 +6,38 @@ request.send();
 
 
 request.onload = function () {
-    var townData = request.response;
+    var templeData = request.response;
 
 
-    for (var i = 0; i < townData.towns.length; i++) {
-        if (townData.towns[i].name === "Soda Springs" || townData.towns[i].name === "Fish Haven" || townData.towns[i].name === "Preston") {
-            
+    for (var i = 0; i < templeData.temples.length; i++) {
+
             var section = document.createElement('section');
 
             var h3 = document.createElement('h3');
-            h3.textContent = townData.towns[i].name;
+            h3.textContent = templeData.temples[i].name;
             
-            var motto = document.createElement('p');
-            motto.textContent = townData.towns[i].motto;
+            var address = document.createElement('p');
+            address.textContent = templeData.temples[i].address;
             
-            var yearFounded = document.createElement('p');
-            yearFounded.textContent = "Year Founded: " + townData.towns[i].yearFounded;
+            var dedicated = document.createElement('p');
+            dedicated.textContent = "Dedicated: " + templeData.temples[i].dedicated;
 
-           var population = document.createElement ('p');
-           population.textContent = "Population: " + townData.towns[i].currentPopulation;
+           var clothing = document.createElement ('p');
+           clothing.textContent = templeData.temples[i].services.clothing;
 
-           var averageRainfall = document.createElement ('p');
-            averageRainfall.textContent = "Average Rainfall: " + townData.towns[i].averageRainfall;
+           var food = document.createElement ('p');
+           food.textContent = templeData.temples[i].services.food;
 
             var img = document.createElement('img');
 
-            if (townData.towns[i].name === "Soda Springs") {
-                img.setAttribute("src", "images/sodaspringsish.jpg");
-            } else if (townData.towns[i].name === "Fish Haven") {
-                img.setAttribute("src", "images/fishhavenish.jpg");
-            } else if (townData.towns[i].name === "Preston") {
-                img.setAttribute("src", "images/prestonish.jpg");
+            if (templeData.temples[i].name === "Portland") {
+                img.setAttribute("src", "images/portlandtemple.jpg");
+            } else if (templeData.temples[i].name === "Preston") {
+                img.setAttribute("src", "images/prestontemple.jpg");
+            } else if (templeData.temples[i].name === "sandiego") {
+                img.setAttribute("src", "images/sandiegotemple.jpg");
+            } else if (templeData.temples[i].name === "rexburg") {
+                img.setAttribute("src", "images/rexburgtemple.jpg");
             }
 
             // var link = document.createElement('href');
@@ -61,4 +62,3 @@ request.onload = function () {
             main.appendChild(section);
         }
     }
-}
