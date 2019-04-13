@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <header id="mainheader">
+        <h1>Temple Inn and Suites</h1>
+        <h2>Affordable Accommodations</h2>
+        <h3>For a reverent and reflective stay</h3>
+        <h4>BOOK STAY NOW!</h4>
+    </header>
+    <nav>
+        <button id="hamburgericon" onclick="toggleMenu()">&#9776</button>
+        <ul id="primarynav" class="hide" class="open">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portlandtemple.html">Portland</a></li>
+            <li><a href="prestontemple.html">Preston</a></li>
+            <li><a href="rexburgtemple.html">Rexburg</a></li>
+            <li><a href="sandiegotemple.html">San Diego</a></li>
+            <li class="active"><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h2>Reservations</h2>
+    <h3>Book a room:</h3>
+    <form action="thanks.html" method="get">
+        <div>
+            <label for="fullName">Full Name:&nbsp;</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Jane Smith" required>
+        </div>
+        <div>
+            <label for="email">Email:&nbsp;</label>
+            <input type="email" id="email" name="email" placeholder="user@domain.com">
+        </div>
+        <div>
+            <label for="phoneNumber">Phone Number:&nbsp;</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="1231231234" required>
+        </div>
+        <div>
+            <label for="zipCode">Zip Code:&nbsp;</label>
+            <input type="number" id="zipCode" name="zipCode" placeholder="12345">
+        </div>
+        <div>
+            <label for="inDate">Check-in Date: </label>
+            <input type="inDate" id="inDate" name="inDate" placeholder="mm/dd/yy" required>
+        </div>
+        <div>
+            <label for="outDate">Check-out Date: </label>
+            <input type="outDate" id="outDate" name="outDate" placeholder="mm/dd/yy" required>
+        </div>
+        <div>
+            <label for="numOfGuests">Number of Guests:&nbsp;</label>
+            <input type="number" id="numOfGuests" name="numOfGuests" placeholder="1">
+        </div>
+        <!-- <div>
+            <label for="stormType">Storm Type:&nbsp;</label>
+            <input list="stormType" required>
+            <datalist id="stormType">
+                <option value="Flash Flood"></option>
+                <option value="Hail"></option>
+                <option value="Hurricane"></option>
+                <option value="Snow Storm"></option>
+                <option value="Thunderstorm"></option>
+                <option value="Tornado"></option>
+            </datalist>
+        </div> -->
+        <!-- <div>
+            <label for="stormSeverity">Storm Severity:&nbsp;</label>
+            <input type="range" id="stormSeverity" name="stormSeverity" value="5" min="1" max="10" step="1"
+                oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+            <span id="stormvalue">5</span><br>
+        </div> -->
+        <div>
+            <label for="location">Location:&nbsp;</label>
+            <select name="location">
+                <option>Please Select</option>
+                <option value="Portland">Portland</option>
+                <option value="Preston">Preston</option>
+                <option value="Rexburg">Rexburg</option>
+                <option value="San Diego">San Diego</option>
+            </select>
+        </div>
+        <!-- <div>
+            <label for="inDanger" id="inDanger">User in-danger?</label><br>
+            <input type="radio" name="inDanger" value="yes">Yes &nbsp;
+            <input type="radio" name="inDanger" value="maybe">Maybe &nbsp;
+            <input type="radio" name="inDanger" value="no">No &nbsp;
+        </div> -->
+        <div>
+            <label for="addInfo">Additional Information or Comments: </label><br>
+            <textarea rows="5" cols="33"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentdate"></span> | Temple Inn and Suites | McKayla Plummer</p>
+    </footer>
+    <!-- <script src="scripts/temples.js"></script> -->
+    <script src="scripts/templehomepage.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+
+</body>
+
+</html>

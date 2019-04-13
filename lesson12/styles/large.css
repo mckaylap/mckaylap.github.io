@@ -4,7 +4,7 @@
     margin: 0px;
     text-align: center;
     align-items: center;
-    background-image: url("../images/pinecones_widescreen.jpg");
+    /* background-image: url("../images/pinecones_widescreen.jpg"); */
     background-position-x: center;
     background-repeat: no-repeat;
     background-position-y: inherit;
@@ -74,7 +74,7 @@ h4 {
 }
 
 #dayforecast {
-  border-color: darkolivegreen;
+  border-color: #a9f8eb;
   padding: 5px;
   border-style: solid;
   border-width: 5px;

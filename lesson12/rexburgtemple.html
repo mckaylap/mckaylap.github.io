@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+</head>
+
+<body>
+    <header id="mainheader">
+        <h1>Temple Inn and Suites</h1>
+        <h2>Affordable Accommodations</h2>
+        <h3>For a reverent and reflective stay</h3>
+        <h4>BOOK STAY NOW!</h4>
+    </header>
+    <nav>
+        <button id="hamburgericon" onclick="toggleMenu()">&#9776</button>
+        <ul id="primarynav" class="hide" class="open">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portlandtemple.html">Portland</a></li>
+            <li><a href="prestontemple.html">Preston</a></li>
+            <li class="active"><a href="rexburgtemple.html">Rexburg</a></li>
+            <li><a href="sandiegotemple.html">San Diego</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <br>
+        <h1>Rexburg</h1>
+        <!-- <br> 
+    Current weather: 10 &deg; -->
+        <img src="images/rexburgtemple.jpg" alt="Rexburg Temple" width="70%">
+        <br><br><br><br>
+        
+    <main2></main2>
+
+    <br><br><br><br>
+        Current Weather at this temple:<br>
+        <img id="current-icon" alt="currentweather" i><br>
+        <span>&nbsp Temperature: </span><span id="temp"></span><br>
+        <span>&nbsp Windspeed: </span><span id="windSpeed"></span><br>
+        <span>&nbsp Windchill: </span><span id="windChill"></span><br>
+    </main>
+
+    <section id="fivedayforecast">
+        <h4>5-Day Forecast</h4>
+        <table id="dayforecast">
+            <tr>
+                <td id="day1"></td>
+                <td id="day2"></td>
+                <td id="day3"></td>
+                <td id="day4"></td>
+                <td id="day5"></td>
+            </tr>
+            <tr>
+                <td id="icon1"></td>
+                <td id="icon2"></td>
+                <td id="icon3"></td>
+                <td id="icon4"></td>
+                <td id="icon5"></td>
+            </tr>
+            <tr>
+                <td id="temp1">&deg;</td>
+                <td id="temp2">&deg;</td>
+                <td id="temp3">&deg;</td>
+                <td id="temp4">&deg;</td>
+                <td id="temp5">&deg;</td>
+            </tr>
+        </table>
+    </section>
+
+    <article>
+        <p>
+           
+        </p>
+    </article>
+
+    <footer>
+
+        <!-- <p> Where is Preston, Idaho?</p> -->
+        <!-- <map>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24109.61531267432!2d-111.90443368129097!3d42.09988214341442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e1!3m2!1sen!2sus!4v1549480033087" width="90%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </map> -->
+        <p>&copy; <span id="currentdate"></span> | Temple Inn & Suites | McKayla Plummer</p>
+    </footer>
+    <script src="scripts/rexburgcitypage.js"></script>
+    <script src="scripts/weatherjson.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <!-- <script src="scripts/windchill.js"></script> -->
+</body>
+
+</html>
