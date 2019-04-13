@@ -8,15 +8,16 @@ request.send();
 request.onload = function () {
     var templeData = request.response;
 
+    for  (var i = 0; i < templeData.length; i++) {
 
-    for (var i = 0; i < templeData.length; i++) {
-
+        if (templeData[i].name === "Portland Oregon Temple") {
             var section = document.createElement('section');
             
-            var h3 = document.createElement('h3');
+            var h3 = document.createElement('h1');
             h3.textContent = templeData[i].name;
 
-            location
+            var location = document.createElement('p');
+            location.textContent = templeData[i].location;
             
             var address = document.createElement('p');
             address.textContent = templeData[i].address;
@@ -42,16 +43,29 @@ request.onload = function () {
            var db = document.createElement ('p');
            db.textContent = templeData[i].services.db;
 
+           var closedfrom = document.createElement ('p');
+           closedfrom.textContent = templeData[i].closures.start;
+
+           var closeduntil = document.createElement ('p');
+           closeduntil.textContent = templeData[i].closures.end;
+
             section.appendChild(h3);
+            section.appendChild(location);
             section.appendChild(address);
+            section.appendChild(announced);
+            section.appendChild(groundbreaking);
             section.appendChild(dedicated);
             section.appendChild(clothing);
             section.appendChild(food);
-            section.appendChild(img);
-            section.appendChild(link)
+            section.appendChild(db);
+            section.appendChild(closedfrom);
+            section.appendChild(closeduntil);
+            section.appendChild(clothing);
+            
 
-            var main = document.querySelector('main');
+            var main = document.querySelector('main2');
             main.appendChild(section);
         }
     }
-    
+
+}

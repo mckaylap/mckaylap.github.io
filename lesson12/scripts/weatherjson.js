@@ -30,7 +30,7 @@ weatherRequest.onload = function () {
 
 
     //icon
-    document.getElementById("current-icon").setAttribute("src", 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
+    document.getElementById("current-icon").setAttribute("src", 'https://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png');
 
 }
 
